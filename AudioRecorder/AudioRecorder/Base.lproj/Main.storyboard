@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6H2-9U-TdO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Audio RecordingVC-->
+        <scene sceneID="v5v-MQ-YQG">
+            <objects>
+                <viewController storyboardIdentifier="ARAudioRecordingVC" id="6H2-9U-TdO" customClass="AudioRecordingVC" customModule="AudioRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="913-k2-W0k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7p-vE-o2F">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4a-6f-Ppb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press the button and hold down to recording!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnB-Jh-guL">
+                                                <rect key="frame" x="10" y="15" width="300" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="BfJ-Hh-7ie"/>
+                                                    <constraint firstAttribute="width" constant="300" id="U8a-lu-O2L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4D-UV-FSg">
+                                                <rect key="frame" x="375" y="5" width="0.0" height="50"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_microphone" translatesAutoresizingMaskIntoConstraints="NO" id="64T-aC-XLu">
+                                                        <rect key="frame" x="10" y="10" width="0.0" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="qXE-Cl-k5y"/>
+                                                            <constraint firstAttribute="width" id="qjA-Wk-sif"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lau-FJ-Ex7">
+                                                        <rect key="frame" x="20" y="15" width="0.0" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="Jag-Qw-MsX"/>
+                                                            <constraint firstAttribute="width" id="trs-8f-UwJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.93841201070000002" green="0.93568754200000004" blue="0.93851929899999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="64T-aC-XLu" firstAttribute="leading" secondItem="s4D-UV-FSg" secondAttribute="leading" constant="10" id="EcW-hG-Bft"/>
+                                                    <constraint firstItem="Lau-FJ-Ex7" firstAttribute="leading" secondItem="64T-aC-XLu" secondAttribute="trailing" constant="10" id="FFS-xb-scL"/>
+                                                    <constraint firstItem="Lau-FJ-Ex7" firstAttribute="centerY" secondItem="s4D-UV-FSg" secondAttribute="centerY" id="ajA-x1-YaR"/>
+                                                    <constraint firstAttribute="width" id="eLE-O0-uI1"/>
+                                                    <constraint firstItem="64T-aC-XLu" firstAttribute="centerY" secondItem="s4D-UV-FSg" secondAttribute="centerY" id="pBm-gd-Ipx"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="＜ Slide to cancel " textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ett-Zz-34v">
+                                                <rect key="frame" x="330" y="0.0" width="0.0" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" id="fp7-Ad-1AR"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.78138738870000002" green="0.78198647499999996" blue="0.78148013350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.84538808150542955" blue="0.98424262236515947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ett-Zz-34v" secondAttribute="trailing" constant="45" id="FXw-iK-qfo"/>
+                                            <constraint firstAttribute="trailing" secondItem="s4D-UV-FSg" secondAttribute="trailing" id="HX6-PP-VU0"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ett-Zz-34v" secondAttribute="bottom" id="Oxq-4B-jiu"/>
+                                            <constraint firstAttribute="bottom" secondItem="s4D-UV-FSg" secondAttribute="bottom" constant="5" id="Oym-do-ISP"/>
+                                            <constraint firstItem="Ett-Zz-34v" firstAttribute="top" secondItem="W4a-6f-Ppb" secondAttribute="top" id="QCV-IW-Mz8"/>
+                                            <constraint firstItem="s4D-UV-FSg" firstAttribute="centerY" secondItem="W4a-6f-Ppb" secondAttribute="centerY" id="T9l-nf-S40"/>
+                                            <constraint firstItem="s4D-UV-FSg" firstAttribute="top" secondItem="W4a-6f-Ppb" secondAttribute="top" constant="5" id="Vb9-xw-4Oc"/>
+                                            <constraint firstItem="OnB-Jh-guL" firstAttribute="leading" secondItem="W4a-6f-Ppb" secondAttribute="leading" constant="10" id="hnf-Qj-PBL"/>
+                                            <constraint firstItem="OnB-Jh-guL" firstAttribute="centerY" secondItem="W4a-6f-Ppb" secondAttribute="centerY" id="sC0-bO-pXf"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.8453880815" blue="0.98424262240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="2yF-aa-bTu"/>
+                                    <constraint firstItem="W4a-6f-Ppb" firstAttribute="leading" secondItem="l7p-vE-o2F" secondAttribute="leading" id="D1d-Mk-zPa"/>
+                                    <constraint firstAttribute="trailing" secondItem="W4a-6f-Ppb" secondAttribute="trailing" id="HAY-rW-a6G"/>
+                                    <constraint firstAttribute="bottom" secondItem="W4a-6f-Ppb" secondAttribute="bottom" id="c97-2s-XrI"/>
+                                    <constraint firstItem="W4a-6f-Ppb" firstAttribute="top" secondItem="l7p-vE-o2F" secondAttribute="top" id="t5k-i0-cTz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audio Recorder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVW-Du-V9u">
+                                <rect key="frame" x="112.5" y="313.5" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ViN-5q-n7i"/>
+                                    <constraint firstAttribute="width" constant="150" id="gZp-XB-4el"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RVW-Du-V9u" firstAttribute="centerY" secondItem="913-k2-W0k" secondAttribute="centerY" id="adi-Hb-nEi"/>
+                            <constraint firstItem="l7p-vE-o2F" firstAttribute="leading" secondItem="21f-vf-6Xq" secondAttribute="leading" id="avg-29-rsU"/>
+                            <constraint firstItem="RVW-Du-V9u" firstAttribute="centerX" secondItem="913-k2-W0k" secondAttribute="centerX" id="cZu-Ba-pNA"/>
+                            <constraint firstItem="l7p-vE-o2F" firstAttribute="trailing" secondItem="21f-vf-6Xq" secondAttribute="trailing" id="e1a-1w-Y3b"/>
+                            <constraint firstItem="l7p-vE-o2F" firstAttribute="bottom" secondItem="21f-vf-6Xq" secondAttribute="bottom" id="ox2-e7-lLZ"/>
+                            <constraint firstItem="l7p-vE-o2F" firstAttribute="centerX" secondItem="913-k2-W0k" secondAttribute="centerX" id="qdj-LC-sWm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="21f-vf-6Xq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="F0u-E3-89T"/>
+                    <connections>
+                        <outlet property="conWidthLblCancel" destination="fp7-Ad-1AR" id="TRc-bR-Zl5"/>
+                        <outlet property="conWidthMicrophonePic" destination="qjA-Wk-sif" id="m6f-QD-FrI"/>
+                        <outlet property="conWidthRcordingTime" destination="trs-8f-UwJ" id="7CF-RH-Ahm"/>
+                        <outlet property="conWidthViewCancel" destination="eLE-O0-uI1" id="WGP-cS-eSj"/>
+                        <outlet property="imgMicrophonePic" destination="64T-aC-XLu" id="NeJ-Nc-wfo"/>
+                        <outlet property="lblCancel" destination="Ett-Zz-34v" id="yrd-Im-gmn"/>
+                        <outlet property="lblRecordingTime" destination="Lau-FJ-Ex7" id="dQZ-RO-syM"/>
+                        <outlet property="viewBackRecording" destination="l7p-vE-o2F" id="YLi-sP-yV7"/>
+                        <outlet property="viewCancel" destination="s4D-UV-FSg" id="lVP-9J-RUL"/>
+                        <outlet property="viewRecording" destination="W4a-6f-Ppb" id="Rah-j2-fR0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTd-ZV-7Zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282.39999999999998" y="-1204.047976011994"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_microphone" width="51.200000762939453" height="51.200000762939453"/>
+    </resources>
+</document>
